@@ -26,27 +26,30 @@ Esta aplicação consiste em duas partes principais:
 - **Clonar o Repositório**
 
    ```
-   git clone https://github.com/gabrielfroes/sorteio-websocket
-   cd sorteio-websocket
-   ``
+   git clone https://github.com/SuzukiJhor/Node-WebSocket.git
+   cd Node-WebSocket
+   ```
 
 - ### Instalar dependências
 
 ```
 npm install
 ```
-Iniciar o Servidor
+### Iniciar o Servidor
 
-bash
-Copy code
+```
 npm start
-Configuração do WebSocket
+```
+
+## Configuração do WebSocket
 
 Para habilitar a comunicação em tempo real, usamos WebSockets. O servidor server.js cuida de aceitar conexões de clientes e admin. A lógica de sorteio e comunicação de resultados é tratada aqui.
 
 client.js: Cada cliente conecta-se ao servidor usando WebSockets. Eles recebem atualizações em tempo real quando um sorteio é realizado.
 admin.js: A interface do administrador se conecta ao servidor como um cliente especial. A partir daqui, o admin pode iniciar um sorteio.
-Estilização e Feedback Visual
+
+
+## Estilização e Feedback Visual
 
 O arquivo styles.css fornece a estilização necessária para as páginas do cliente e do admin. Durante e depois de um sorteio, a interface do cliente muda de cor para indicar se ganharam ou perderam. O código de confirmação (para vencedores) é exibido em um estilo que se assemelha a um ticket, com um fundo branco, fonte preta e grossa, e bordas arredondadas.
 
@@ -54,7 +57,7 @@ Feedback Tátil
 
 Se o dispositivo suportar, ele vibrará após o resultado do sorteio ser anunciado, dando um feedback tátil ao usuário.
 
-Como Executar o Sorteio
+## Como Executar o Sorteio
 
 Abra a página de administração em http://localhost:3000/admin.
 Verifique quantos clientes estão conectados através do contador de participantes.
