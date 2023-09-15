@@ -25,17 +25,17 @@ Esta aplicação consiste em duas partes principais:
 
 - **Clonar o Repositório**
 
-   ```
-   git clone https://github.com/SuzukiJhor/Node-WebSocket.git
-   cd Node-WebSocket
-   ```
+```
+git clone https://github.com/SuzukiJhor/Node-WebSocket.git
+cd Node-WebSocket
+```
 
 - ### Instalar dependências
 
 ```
 npm install
 ```
-### Iniciar o Servidor
+- ### Iniciar o Servidor
 
 ```
 npm start
