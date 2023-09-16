@@ -1,4 +1,3 @@
-const { log } = require('console')
 const express = require('express')
 const http = require('http')
 const WebSocket = require('ws')
@@ -22,7 +21,7 @@ app.get('/admin', (req, res) => res.sendFile(__dirname + '/public/admin.html'))
 
 server.listen(APP_PORT, () => console.log('servidor rodando'))
 
-const clients = []
+let clients = []
 
 
 wss.on('connection', (ws)=>{

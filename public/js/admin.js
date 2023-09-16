@@ -3,10 +3,10 @@ let socket
 function connectionWebSocket() {
     socket = new WebSocket(WS_URL)
 
-    socket, addEventListener('open', handleSocketOpen)
-    socket, addEventListener('message', handleSocketMessage)
-    socket, addEventListener('error', handleSocketError)
-    socket, addEventListener('close', handleSocketClose)
+    socket.addEventListener('open', handleSocketOpen)
+    socket.addEventListener('message', handleSocketMessage)
+    socket.addEventListener('error', handleSocketError)
+    socket.addEventListener('close', handleSocketClose)
 }
 
 function handleSocketOpen() {
@@ -22,7 +22,7 @@ function handleSocketMessage(event) {
     }
 }
 
-function handleSocketError() {
+function handleSocketError(error) {
     console.error('Error in WebSocket', error)
 }
 
@@ -32,7 +32,7 @@ function handleSocketClose() {
 }
 
 function updateClientCount(count) {
-    document.getElementById('clientCount').innerText = count
+    document.getElementById("clientCount").innerText = count;
 }
 
 function generateCode(length) {
@@ -51,10 +51,10 @@ connectionWebSocket()
 const drawButton = document.getElementById('draw')
 const messageDiv = document.getElementById('message')
 
-drawButton.addEventListener('click', handleDrawClick)
+drawButton.addEventListener("click", handleDrawClick);
 
 function handleDrawClick() {
-    const confirmationCode = generateCode()
+    const confirmationCode = generateCode(4)
 
     if (socket.readyState === WebSocket.OPEN) {
         socket.send(
@@ -73,5 +73,5 @@ function displayConfirmationCode(code) {
     messageDiv.innerText = code
     messageDiv.classList.remove('hide-message')
     messageDiv.classList.add('show-message')
-    drawButton.innerText = 'Sorteado'
+    drawButton.innerText = 'Sorteado!'
 }
