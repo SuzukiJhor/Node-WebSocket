@@ -63,3 +63,8 @@ Abra a página de administração em http://localhost:3000/admin.
 Verifique quantos clientes estão conectados através do contador de participantes.
 Clique no botão "Realizar Sorteio" para iniciar o sorteio. Um código de confirmação será gerado.
 Todos os clientes receberão o resultado em tempo real. O vencedor verá o código de confirmação em sua tela.
+
+### Apresentation
+
+<img width="780" alt="image" src="https://github.com/SuzukiJhor/Node-WebSocket/assets/95131108/ea85cf20-c04a-4e62-9671-992744601f86">
+
