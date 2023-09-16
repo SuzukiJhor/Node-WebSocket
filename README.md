@@ -71,3 +71,6 @@ Todos os clientes receberão o resultado em tempo real. O vencedor verá o códi
 
 <img width="780" alt="image" src="https://github.com/SuzukiJhor/Node-WebSocket/assets/95131108/ea85cf20-c04a-4e62-9671-992744601f86">
 
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
+
