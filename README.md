@@ -1,6 +1,8 @@
 ﻿# Node-WebSocket
 
-Uma aplicação simples de sorteio em tempo real utilizando WebSockets.
+![image](https://github.com/SuzukiJhor/Node.js-WebApi-No-Framework/assets/95131108/d7a32d78-717d-404d-9628-12ec1d3d0bd1)
+
+Uma aplicação simples de sorteio em tempo real utilizando WebSockets com Node.js.
 
 ## Descrição
 
